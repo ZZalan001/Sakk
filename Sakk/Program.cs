@@ -101,6 +101,14 @@ namespace Sakk
             Console.WriteLine($"A legkorábbi mentést játszotta: {legkorabbi.Vilagos} és {legkorabbi.Sotet}");
             //Console.WriteLine($"Kaszparov nevű játékos játszott: {vanbenne}");
             Console.WriteLine(allasok[0].CompareTo(allasok[1]));
+            Console.WriteLine("Mentési idő szerinti sorrendben:");
+            allasok.Sort();
+            foreach (Allas a in allasok)
+            {
+                Console.WriteLine(a.ToString());
+                Console.WriteLine();
+            }
+
             Console.ReadLine();
         }
 
